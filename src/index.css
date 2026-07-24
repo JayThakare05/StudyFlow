@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..800;1,14..32,300..800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -13,6 +13,7 @@
 
   html {
     scroll-behavior: smooth;
+    font-size: 16px;
   }
 
   body {
@@ -21,6 +22,32 @@
     color: #111827;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
+  }
+
+  ::selection {
+    background-color: rgba(79, 70, 229, 0.15);
+    color: #111827;
+  }
+
+  :focus-visible {
+    outline: 2px solid #4F46E5;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  a, button {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  img, video {
+    max-width: 100%;
+    display: block;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.15;
+    letter-spacing: -0.02em;
   }
 }
 
@@ -31,5 +58,9 @@
   }
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
+  }
+
+  .text-balance {
+    text-wrap: balance;
   }
 }

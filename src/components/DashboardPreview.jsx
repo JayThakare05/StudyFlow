@@ -60,7 +60,7 @@ function PanelTitle({ children }) {
 
 export default function DashboardPreview() {
   return (
-    <section className="py-24 bg-surface">
+    <section id="dashboard" aria-labelledby="dashboard-heading" className="py-24 bg-surface">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-14">
           <motion.span
@@ -77,6 +77,7 @@ export default function DashboardPreview() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.05 }}
+            id="dashboard-heading"
             className="text-4xl font-extrabold text-ink tracking-tight"
           >
             Your command center

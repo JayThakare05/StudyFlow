@@ -2,11 +2,11 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Play, CheckCircle2, Clock, BarChart3, StickyNote } from 'lucide-react';
 
 const fadeUp = {
-  hidden: { opacity: 0, y: 32 },
+  hidden: { opacity: 0, y: 24 },
   visible: (delay = 0) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: 'easeOut', delay },
+    transition: { duration: 0.55, ease: [0.21, 0.47, 0.32, 0.98], delay },
   }),
 };
 

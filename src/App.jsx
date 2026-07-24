@@ -2,6 +2,8 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import TrustedBy from './components/TrustedBy';
 import Features from './components/Features';
+import DashboardPreview from './components/DashboardPreview';
+import Testimonials from './components/Testimonials';
 
 export default function App() {
   return (
@@ -11,6 +13,8 @@ export default function App() {
         <Hero />
         <TrustedBy />
         <Features />
+        <DashboardPreview />
+        <Testimonials />
       </main>
     </div>
   );

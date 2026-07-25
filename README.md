@@ -174,10 +174,6 @@ Your site will be live at `https://studyflow-<hash>.vercel.app`.
 
 ---
 
-## License
 
-MIT — free to use for personal and commercial projects.
-
----
 
 *Built with ❤️ using React, Vite, Tailwind CSS, and Framer Motion.*
